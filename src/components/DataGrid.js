@@ -8,8 +8,9 @@ const columns = [
 export default function DataTable({ data }) {
   const rows = data.map((item, index) => ({ id: index, name: item.name }));
 
+
   return (
-    <div style={{ height: 400, width: '100%' }}>
+    <div style={{ height: 400, width: '20%' }}>
       <DataGrid rows={rows} columns={columns} pageSize={5} />
     </div>
   );

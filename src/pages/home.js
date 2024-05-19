@@ -23,7 +23,7 @@ function Home() {
     <div>
       <h1>Home</h1>
       <DataGrid data={pokemonData} />
-      <Map locations={locations} />
+      <Map locations={locations.filter(location => location.lat && location.lon)} />
     </div>
   );
 }
